@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+            <h1><centre>Flight Insurance App</centre></h1>
+        <div class="row top-20">
+
+                <h5>
+                    <br>Instructions</h5>
+                <h6>
+                <br>This is a flight insurance App. The list below shows a list of flight you could choose from to get insurance. If the status of the flight is "true", it means it is eligble for insurance.
+                To buy Insurance, you need to have your ether address ready for input. You could use this address to buy insurance, check your balance and manage your outstanding credit all in one click.
+                Please note that for each purchase the insured amount should not be bigger than 1 ether.
+        </h6>
+
+        <h6>
+            <br>**To start testing, please press the setup button at the bottom of the page to start. Once you see the notification. Refresh the page. You can start using the app when all the flight status becomes true
+        </h6>
+                
+        <div id="display-wrapper" class="top-20">
+        </div>
+
+
+            
+        </div>
+    
+        <div class="row top-20">
+            
+            <label class="form">Flight Number</label> <input type="text" id="iflight-number"> 
+            <label class="form">Insured Address</label> <input type="text" id="iaddress"> 
+            <label class="form">Value (Ether)</label> <input type="text" id="ivalue"> 
+
+            <btn class="btn btn-primary" id="buy-insurance">Buy Insurance</btn>
+        </div>
+
+        <br>
+        <br>
+        <div class="row top-20">
+                <label class="form">Flight Number</label> <input type="text" id="bflight-number">
+                <label class="form">Address</label> <input type="text" id="baddress"> <btn class="btn btn-primary" id="check-isum">Check Insured Sum</btn>
+        </div>
+        
+        <br>
+        <br>
+        <div class="row top-20">
+                <label class="form">Flight</label> <input type="text" id="flight-number"> <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+        </div>
+            
+
+        <br>
+        <br>
+        <div class="row top-20">
+
+            <label class="form">Address</label> <input type="text" id="address"> <btn class="btn btn-primary" id="check-balance">Check Balance</btn>
+        </div>
+
+        <br>
+        <br>
+        <div class="row top-20">
+                <label class="form">Withdrawal Address</label> <input type="text" id="waddress">
+            <label class="form">Amount(wei)</label> <input type="text" id="amount"> <btn class="btn btn-primary" id="withdraw">Withdraw</btn>
+        </div>
+
+
+        <h5>
+                <br>Testing Setup - please press this button to initialise the test</h5>
+        <br>
+        <br>
+        <div class="row top-25">
+               <btn class="btn btn-primary" id="setup">Setup</btn>
+        </div>
+
+
+
+    </main>
+
+
+</body>
+
+</html>
